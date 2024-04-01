@@ -326,11 +326,7 @@
                 <Editable v-if="enableEditMode" v-model="config.footerText" tag="div" :contenteditable="enableEditMode" :noNL="false" class="alert-heading p-2" />
                 <!-- eslint-disable-next-line vue/no-v-html-->
                 <div v-if="! enableEditMode" class="alert-heading p-2" v-html="footerHTML"></div>
-
-                <p v-if="config.showPoweredBy">
-                    {{ $t("Powered by") }} <a target="_blank" rel="noopener noreferrer" href="https://github.com/samarun/uptime-kuma">{{ $t("Nlag Monitoring" ) }}</a>
-                </p>
-
+                
                 <div class="refresh-info mb-2">
                     <div>{{ $t("Last Updated") }}:  {{ lastUpdateTimeDisplay }}</div>
                     <div>{{ $tc("statusPageRefreshIn", [ updateCountdownText]) }}</div>
