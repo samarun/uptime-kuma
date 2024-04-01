@@ -19,7 +19,7 @@ import * as utc from "dayjs/plugin/utc";
 
 export const isDev = process.env.NODE_ENV === "development";
 export const isNode = typeof process !== "undefined" && process?.versions?.node;
-export const appName = "Uptime Kuma";
+export const appName = "Nlag Monitoring";
 export const DOWN = 0;
 export const UP = 1;
 export const PENDING = 2;
@@ -155,7 +155,7 @@ export function ucfirst(str: string) {
 }
 
 /**
- * @deprecated Use log.debug (https://github.com/louislam/uptime-kuma/pull/910)
+ * @deprecated Use log.debug (https://github.com/samarun/uptime-kuma/pull/910)
  * @param msg Message to write
  * @returns {void}
  */

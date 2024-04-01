@@ -49,10 +49,7 @@
                 </div>
 
                 <!-- Show Powered By -->
-                <div class="my-3 form-check form-switch">
-                    <input id="show-powered-by" v-model="config.showPoweredBy" class="form-check-input" type="checkbox">
-                    <label class="form-check-label" for="show-powered-by">{{ $t("Show Powered By") }}</label>
-                </div>
+              
 
                 <!-- Show certificate expiry -->
                 <div class="my-3 form-check form-switch">
@@ -331,7 +328,7 @@
                 <div v-if="! enableEditMode" class="alert-heading p-2" v-html="footerHTML"></div>
 
                 <p v-if="config.showPoweredBy">
-                    {{ $t("Powered by") }} <a target="_blank" rel="noopener noreferrer" href="https://github.com/louislam/uptime-kuma">{{ $t("Uptime Kuma" ) }}</a>
+                    {{ $t("Powered by") }} <a target="_blank" rel="noopener noreferrer" href="https://github.com/samarun/uptime-kuma">{{ $t("Nlag Monitoring" ) }}</a>
                 </p>
 
                 <div class="refresh-info mb-2">

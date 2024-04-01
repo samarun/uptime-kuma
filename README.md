@@ -2,11 +2,11 @@
     <img src="./public/icon.svg" width="128" alt="" />
 </div>
 
-# Uptime Kuma
+# Nlag Monitoring
 
-Uptime Kuma is an easy-to-use self-hosted monitoring tool.
+Nlag Monitoring is an easy-to-use self-hosted monitoring tool.
 
-<a target="_blank" href="https://github.com/louislam/uptime-kuma"><img src="https://img.shields.io/github/stars/louislam/uptime-kuma?style=flat" /></a> <a target="_blank" href="https://hub.docker.com/r/louislam/uptime-kuma"><img src="https://img.shields.io/docker/pulls/louislam/uptime-kuma" /></a> <a target="_blank" href="https://hub.docker.com/r/louislam/uptime-kuma"><img src="https://img.shields.io/docker/v/louislam/uptime-kuma/latest?label=docker%20image%20ver." /></a> <a target="_blank" href="https://github.com/louislam/uptime-kuma"><img src="https://img.shields.io/github/last-commit/louislam/uptime-kuma" /></a>  <a target="_blank" href="https://opencollective.com/uptime-kuma"><img src="https://opencollective.com/uptime-kuma/total/badge.svg?label=Open%20Collective%20Backers&color=brightgreen" /></a>
+<a target="_blank" href="https://github.com/samarun/uptime-kuma"><img src="https://img.shields.io/github/stars/louislam/uptime-kuma?style=flat" /></a> <a target="_blank" href="https://hub.docker.com/r/louislam/uptime-kuma"><img src="https://img.shields.io/docker/pulls/louislam/uptime-kuma" /></a> <a target="_blank" href="https://hub.docker.com/r/louislam/uptime-kuma"><img src="https://img.shields.io/docker/v/louislam/uptime-kuma/latest?label=docker%20image%20ver." /></a> <a target="_blank" href="https://github.com/samarun/uptime-kuma"><img src="https://img.shields.io/github/last-commit/louislam/uptime-kuma" /></a>  <a target="_blank" href="https://opencollective.com/uptime-kuma"><img src="https://opencollective.com/uptime-kuma/total/badge.svg?label=Open%20Collective%20Backers&color=brightgreen" /></a>
 [![GitHub Sponsors](https://img.shields.io/github/sponsors/louislam?label=GitHub%20Sponsors)](https://github.com/sponsors/louislam) <a href="https://weblate.kuma.pet/projects/uptime-kuma/uptime-kuma/">
 <img src="https://weblate.kuma.pet/widgets/uptime-kuma/-/svg-badge.svg" alt="Translation status" />
 </a>
@@ -19,15 +19,15 @@ Try it!
 
 Demo Server (Location: Frankfurt - Germany): https://demo.kuma.pet/start-demo
 
-It is a temporary live demo, all data will be deleted after 10 minutes. Sponsored by [Uptime Kuma Sponsors](https://github.com/louislam/uptime-kuma#%EF%B8%8F-sponsors).
+It is a temporary live demo, all data will be deleted after 10 minutes. Sponsored by [Nlag Monitoring Sponsors](https://github.com/samarun/uptime-kuma#%EF%B8%8F-sponsors).
 
 ## ⭐ Features
 
 - Monitoring uptime for HTTP(s) / TCP / HTTP(s) Keyword / HTTP(s) Json Query / Ping / DNS Record / Push / Steam Game Server / Docker Containers
 - Fancy, Reactive, Fast UI/UX
-- Notifications via Telegram, Discord, Gotify, Slack, Pushover, Email (SMTP), and [90+ notification services, click here for the full list](https://github.com/louislam/uptime-kuma/tree/master/src/components/notifications)
+- Notifications via Telegram, Discord, Gotify, Slack, Pushover, Email (SMTP), and [90+ notification services, click here for the full list](https://github.com/samarun/uptime-kuma/tree/master/src/components/notifications)
 - 20-second intervals
-- [Multi Languages](https://github.com/louislam/uptime-kuma/tree/master/src/lang)
+- [Multi Languages](https://github.com/samarun/uptime-kuma/tree/master/src/lang)
 - Multiple status pages
 - Map status pages to specific domains
 - Ping chart
@@ -43,7 +43,7 @@ It is a temporary live demo, all data will be deleted after 10 minutes. Sponsore
 docker run -d --restart=always -p 3001:3001 -v uptime-kuma:/app/data --name uptime-kuma louislam/uptime-kuma:1
 ```
 
-Uptime Kuma is now running on http://localhost:3001
+Nlag Monitoring is now running on http://localhost:3001
 
 > [!WARNING]
 > File Systems like **NFS** (Network File System) are **NOT** supported. Please map to a local directory or volume.
@@ -59,10 +59,10 @@ Requirements:
 - [Node.js](https://nodejs.org/en/download/) 18 / 20.4
 - [npm](https://docs.npmjs.com/cli/) 9
 - [Git](https://git-scm.com/downloads)
-- [pm2](https://pm2.keymetrics.io/) - For running Uptime Kuma in the background
+- [pm2](https://pm2.keymetrics.io/) - For running Nlag Monitoring in the background
 
 ```bash
-git clone https://github.com/louislam/uptime-kuma.git
+git clone https://github.com/samarun/uptime-kuma.git
 cd uptime-kuma
 npm run setup
 
@@ -77,7 +77,7 @@ npm install pm2 -g && pm2 install pm2-logrotate
 pm2 start server/server.js --name uptime-kuma
 ```
 
-Uptime Kuma is now running on http://localhost:3001
+Nlag Monitoring is now running on http://localhost:3001
 
 More useful PM2 Commands
 
@@ -93,19 +93,19 @@ pm2 save && pm2 startup
 
 If you need more options or need to browse via a reverse proxy, please read:
 
-https://github.com/louislam/uptime-kuma/wiki/%F0%9F%94%A7-How-to-Install
+https://github.com/samarun/uptime-kuma/wiki/%F0%9F%94%A7-How-to-Install
 
 ## 🆙 How to Update
 
 Please read:
 
-https://github.com/louislam/uptime-kuma/wiki/%F0%9F%86%99-How-to-Update
+https://github.com/samarun/uptime-kuma/wiki/%F0%9F%86%99-How-to-Update
 
 ## 🆕 What's Next?
 
 I will assign requests/issues to the next milestone.
 
-https://github.com/louislam/uptime-kuma/milestones
+https://github.com/samarun/uptime-kuma/milestones
 
 ## ❤️ Sponsors
 
@@ -146,9 +146,9 @@ If you love this project, please consider giving it a ⭐.
 
 ⚠️ For any general or technical questions, please don't send me an email, as I am unable to provide support in that manner. I will not respond if you ask questions there.
 
-I recommend using Google, GitHub Issues, or Uptime Kuma's subreddit for finding answers to your question. If you cannot find the information you need, feel free to ask:
+I recommend using Google, GitHub Issues, or Nlag Monitoring's subreddit for finding answers to your question. If you cannot find the information you need, feel free to ask:
 
-- [GitHub Issues](https://github.com/louislam/uptime-kuma/issues)
+- [GitHub Issues](https://github.com/samarun/uptime-kuma/issues)
 - [Subreddit (r/UptimeKuma)](https://www.reddit.com/r/UptimeKuma/)
 
 My Reddit account: [u/louislamlam](https://reddit.com/u/louislamlam)
@@ -159,26 +159,26 @@ You can mention me if you ask a question on the subreddit.
 ### Create Pull Requests
 
 We DO NOT accept all types of pull requests and do not want to waste your time. Please be sure that you have read and follow pull request rules:
-[CONTRIBUTING.md#can-i-create-a-pull-request-for-uptime-kuma](https://github.com/louislam/uptime-kuma/blob/master/CONTRIBUTING.md#can-i-create-a-pull-request-for-uptime-kuma)
+[CONTRIBUTING.md#can-i-create-a-pull-request-for-uptime-kuma](https://github.com/samarun/uptime-kuma/blob/master/CONTRIBUTING.md#can-i-create-a-pull-request-for-uptime-kuma)
 
 ### Test Pull Requests
 
 There are a lot of pull requests right now, but I don't have time to test them all.
 
 If you want to help, you can check this:
-https://github.com/louislam/uptime-kuma/wiki/Test-Pull-Requests
+https://github.com/samarun/uptime-kuma/wiki/Test-Pull-Requests
 
 ### Test Beta Version
 
-Check out the latest beta release here: https://github.com/louislam/uptime-kuma/releases
+Check out the latest beta release here: https://github.com/samarun/uptime-kuma/releases
 
 ### Bug Reports / Feature Requests
 
-If you want to report a bug or request a new feature, feel free to open a [new issue](https://github.com/louislam/uptime-kuma/issues).
+If you want to report a bug or request a new feature, feel free to open a [new issue](https://github.com/samarun/uptime-kuma/issues).
 
 ### Translations
 
-If you want to translate Uptime Kuma into your language, please visit [Weblate Readme](https://github.com/louislam/uptime-kuma/blob/master/src/lang/README.md).
+If you want to translate Nlag Monitoring into your language, please visit [Weblate Readme](https://github.com/samarun/uptime-kuma/blob/master/src/lang/README.md).
 
 ### Spelling & Grammar
 

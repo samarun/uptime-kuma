@@ -44,7 +44,7 @@ namespace UptimeKuma {
     {
         private static Mutex mutex = null;
 
-        const string appName = "Uptime Kuma";
+        const string appName = "Nlag Monitoring";
 
         private NotifyIcon trayIcon;
         private Process process;
@@ -169,7 +169,7 @@ namespace UptimeKuma {
                 });
 
             } catch (Exception e) {
-                MessageBox.Show("Startup failed: " + e.Message, "Uptime Kuma Error");
+                MessageBox.Show("Startup failed: " + e.Message, "Nlag Monitoring Error");
             }
         }
 
@@ -221,16 +221,16 @@ namespace UptimeKuma {
 
         void VisitGitHub(object sender, EventArgs e) {
             if (intranetOnly) {
-                MessageBox.Show("You have parsed in --intranet so we will not try to access the internet or visit github.com, please go to https://github.com/louislam/uptime-kuma if you want to visit github.");
+                MessageBox.Show("You have parsed in --intranet so we will not try to access the internet or visit github.com, please go to https://github.com/samarun/uptime-kuma if you want to visit github.");
                 return;
             }
 
-            Process.Start("https://github.com/louislam/uptime-kuma");
+            Process.Start("https://github.com/samarun/uptime-kuma");
         }
 
         void About(object sender, EventArgs e)
         {
-            MessageBox.Show("Uptime Kuma Windows Runtime v1.0.0" + Environment.NewLine + "© 2023 Louis Lam", "Info");
+            MessageBox.Show("Nlag Monitoring Windows Runtime v1.0.0" + Environment.NewLine + "© 2023 Louis Lam", "Info");
         }
 
         void Exit(object sender, EventArgs e)
@@ -250,7 +250,7 @@ namespace UptimeKuma {
                     line += process.StandardOutput.ReadLine();
                 }
 
-                MessageBox.Show("Uptime Kuma exited unexpectedly. Exit code: " + process.ExitCode + " " + line);
+                MessageBox.Show("Nlag Monitoring exited unexpectedly. Exit code: " + process.ExitCode + " " + line);
             }
 
             trayIcon.Visible = false;

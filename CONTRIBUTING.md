@@ -1,6 +1,6 @@
 # Project Info
 
-First of all, I want to thank everyone who have wrote issues or shared pull requests for Uptime Kuma.
+First of all, I want to thank everyone who have wrote issues or shared pull requests for Nlag Monitoring.
 I never thought the GitHub community would be so nice!
 Because of this, I also never thought that other people would actually read and edit my code.
 Parts of the code are not very well-structured or commented, sorry about that.
@@ -25,7 +25,7 @@ For development, we run vite in development mode on another port.
 - `src` (Frontend source code)
 - `test` (unit test)
 
-## Can I create a pull request for Uptime Kuma?
+## Can I create a pull request for Nlag Monitoring?
 
 Yes or no, it depends on what you will try to do.
 Both your and our maintainers time is precious, and we don't want to waste both time.
@@ -37,7 +37,7 @@ Different guidelines exist for different types of pull requests (PRs):
   <p>
   
   Submitting security fixes is something that may put the community at risk.
-  Please read through our [security policy](SECURITY.md) and submit vulnerabilities via an [advisory](https://github.com/louislam/uptime-kuma/security/advisories/new) + [issue](https://github.com/louislam/uptime-kuma/issues/new?assignees=&labels=help&template=security.md) instead.
+  Please read through our [security policy](SECURITY.md) and submit vulnerabilities via an [advisory](https://github.com/samarun/uptime-kuma/security/advisories/new) + [issue](https://github.com/samarun/uptime-kuma/issues/new?assignees=&labels=help&template=security.md) instead.
   We encourage you to submit how to fix a vulnerability if you know how to, this is not required.
   Following the security policy allows us to properly test, fix bugs.
   This review allows us to notice, if there are any changes necessary to unrelated parts like the documentation.  
@@ -61,12 +61,12 @@ Different guidelines exist for different types of pull requests (PRs):
   
   We use weblate to localise this project into many languages.
   If you are unhappy with a translation this is the best start.
-  On how to translate using weblate, please see [these instructions](https://github.com/louislam/uptime-kuma/blob/master/src/lang/README.md).
+  On how to translate using weblate, please see [these instructions](https://github.com/samarun/uptime-kuma/blob/master/src/lang/README.md).
   
   There are two cases in which a change cannot be done in weblate and requires a PR:
   - A text may not be currently localisable. In this case, **adding a new language key** via `$t("languageKey")` might be nessesary
   - language keys need to be **added to `en.json`** to be visible in weblate. If this has not happened, a PR is appreciated.
-  - **Adding a new language** requires a new file see [these instructions](https://github.com/louislam/uptime-kuma/blob/master/src/lang/README.md)
+  - **Adding a new language** requires a new file see [these instructions](https://github.com/samarun/uptime-kuma/blob/master/src/lang/README.md)
   
   <sub>Because maintainer time is precious junior maintainers may merge uncontroversial PRs in this area.</sub>
   </p>
@@ -161,7 +161,7 @@ The following rules are essential for making your PR mergable:
   Such changes require a major version release.
 - **Test your code** before submitting a PR.
   Buggy PRs will not be merged.
-- Make sure the **UI/UX is close to Uptime Kuma**.
+- Make sure the **UI/UX is close to Nlag Monitoring**.
 - **Think about the maintainability**:
   Don't add functionality that is completely **out of scope**.
   Keep in mind that we need to be able to maintain the functionality.
@@ -172,7 +172,7 @@ I ([@louislam](https://github.com/louislam)) have the final say.
 If your pull request does not meet my expectations, I will reject it, no matter how much time you spent on it.
 Therefore, it is essential to have a discussion beforehand.
 
-I will assign your pull request to a [milestone](https://github.com/louislam/uptime-kuma/milestones), if I plan to review and merge it.
+I will assign your pull request to a [milestone](https://github.com/samarun/uptime-kuma/milestones), if I plan to review and merge it.
 
 Please don't rush or ask for an ETA.
 We have to understand the pull request, make sure it has no breaking changes and stick to the vision of this project, especially for large pull requests.
@@ -194,7 +194,7 @@ The rationale behind this is that we can align the direction and scope of the fe
 3. Create a new branch
 4. Create an empty commit: `git commit -m "<YOUR TASK NAME>" --allow-empty`
 5. Push to your fork repo
-6. Prepare a pull request: https://github.com/louislam/uptime-kuma/compare
+6. Prepare a pull request: https://github.com/samarun/uptime-kuma/compare
 7. Write a proper description. You can mention @louislam in it, so @louislam will get the notification.
 8. Create your pull request as a Draft
 9. Wait for the discussion
@@ -202,7 +202,7 @@ The rationale behind this is that we can align the direction and scope of the fe
 ## Project Styles
 
 I personally do not like something that requires so many configurations before you can finally start the app.
-The goal is to make the Uptime Kuma installation as easy as installing a mobile app.
+The goal is to make the Nlag Monitoring installation as easy as installing a mobile app.
 
 - Easy to install for non-Docker users
   - no native build dependency is needed (for `x86_64`/`armv7`/`arm64`)
@@ -240,7 +240,7 @@ The goal is to make the Uptime Kuma installation as easy as installing a mobile 
 
 If you don't want to setup an local environment, you can now develop on GitHub Codespaces, read more:
 
-https://github.com/louislam/uptime-kuma/tree/master/.devcontainer
+https://github.com/samarun/uptime-kuma/tree/master/.devcontainer
 
 ## Git Branches
 
@@ -313,7 +313,7 @@ npm run build
 
 ### Frontend Details
 
-Uptime Kuma Frontend is a single page application (SPA). Most paths are handled by Vue Router.
+Nlag Monitoring Frontend is a single page application (SPA). Most paths are handled by Vue Router.
 
 The router is in `src/router.js`
 
@@ -323,7 +323,7 @@ The data and socket logic are in `src/mixins/socket.js`.
 
 ## Database Migration
 
-See: https://github.com/louislam/uptime-kuma/tree/master/db/knex_migrations
+See: https://github.com/samarun/uptime-kuma/tree/master/db/knex_migrations
 
 ## Unit Test
 
@@ -359,7 +359,7 @@ Please add **all** the strings which are translatable to `src/lang/en.json` (if 
 **Don't include any other languages in your initial pull request** (even if this is your mother tongue), to avoid merge-conflicts between weblate and `master`.
 The translations can then (after merging a PR into `master`) be translated by awesome people donating their language skills.
 
-If you want to help by translating Uptime Kuma into your language, please visit the [instructions on how to translate using weblate](https://github.com/louislam/uptime-kuma/blob/master/src/lang/README.md).
+If you want to help by translating Nlag Monitoring into your language, please visit the [instructions on how to translate using weblate](https://github.com/samarun/uptime-kuma/blob/master/src/lang/README.md).
 
 ## Spelling & Grammar
 
@@ -370,7 +370,7 @@ My mother language is not English and my grammar is not that great.
 
 Since there is no way to make a pull request to the wiki, I have set up another repo to do that.
 
-https://github.com/louislam/uptime-kuma-wiki
+https://github.com/samarun/uptime-kuma-wiki
 
 ## Docker
 
@@ -391,8 +391,8 @@ https://github.com/louislam/uptime-kuma-wiki
 - `beta2`: Latest beta build
 - `2.x.x-beta.x`
 - `nightly2`: Dev build
-- `base2`: Basic Debian setup without Uptime Kuma source code (Full features)
-- `base2-slim`: Basic Debian setup without Uptime Kuma source code
+- `base2`: Basic Debian setup without Nlag Monitoring source code (Full features)
+- `base2-slim`: Basic Debian setup without Nlag Monitoring source code
 - `pr-test2`: For testing pull request without setting up a local environment
 
 #### v1
@@ -402,16 +402,16 @@ https://github.com/louislam/uptime-kuma-wiki
 - `1.x.x-beta.x`: Beta build
 - `beta`: Latest beta build
 - `nightly`: Dev build
-- `base-debian`: Basic Debian setup without Uptime Kuma source code
+- `base-debian`: Basic Debian setup without Nlag Monitoring source code
 - `pr-test`: For testing pull request without setting up a local environment
-- `base-alpine`: (Deprecated) Basic Alpine setup without Uptime Kuma source code
+- `base-alpine`: (Deprecated) Basic Alpine setup without Nlag Monitoring source code
 - `1-alpine`, `alpine`: (Deprecated)
 - `1.x.x-alpine`: (Deprecated)
 
 ## Maintainer
 
 Check the latest issues and pull requests:
-https://github.com/louislam/uptime-kuma/issues?q=sort%3Aupdated-desc
+https://github.com/samarun/uptime-kuma/issues?q=sort%3Aupdated-desc
 
 ### What is a maintainer and what are their roles?
 
@@ -467,9 +467,9 @@ We have a few procedures we follow. These are documented here:
   **Setup Repo**
   
   ```bash
-  git clone https://github.com/louislam/uptime-kuma-wiki.git
+  git clone https://github.com/samarun/uptime-kuma-wiki.git
   cd uptime-kuma-wiki
-  git remote add production https://github.com/louislam/uptime-kuma.wiki.git
+  git remote add production https://github.com/samarun/uptime-kuma.wiki.git
   ```
   
   **Push to Production Wiki**
