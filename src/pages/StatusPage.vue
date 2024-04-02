@@ -712,7 +712,7 @@ export default {
         this.updateHeartbeatList();
         feedInterval = setInterval(() => {
             this.updateHeartbeatList();
-        }, (this.autoRefreshInterval * 60 + 10) * 1000);
+        }, (this.autoRefreshInterval * 60 + 10) * 60);
 
         this.updateUpdateTimer();
 
